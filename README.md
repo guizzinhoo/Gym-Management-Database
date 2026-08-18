@@ -2,7 +2,7 @@
 
 A relational database project developed for a fictional gym management system.
 
-The database was designed following relational modeling principles to manage students, employees, membership plans, workout routines, equipment and maintenance records.
+The project models the core operations of a gym, including student registration, employee management, membership plans, workout routines, contracts and equipment maintenance.
 
 ---
 
@@ -15,7 +15,7 @@ The database was designed following relational modeling principles to manage stu
 - Workout routines
 - Exercise catalog
 - Equipment inventory
-- Equipment maintenance tracking
+- Equipment maintenance
 
 ---
 
@@ -26,9 +26,17 @@ The database was designed following relational modeling principles to manage stu
 
 ---
 
-## Database Structure
+## Files
 
-The project contains eight main entities:
+| File | Description |
+|------|-------------|
+| `gym_management.sql` | Database schema (tables, primary keys and foreign keys) |
+| `inserts.sql` | Sample data for testing |
+| `queries.sql` | Example SQL queries demonstrating database usage |
+
+---
+
+## Database Entities
 
 - Employee
 - Student
@@ -39,49 +47,16 @@ The project contains eight main entities:
 - Equipment
 - Equipment Maintenance
 
-Relationships are implemented using primary and foreign keys to ensure referential integrity.
-
----
-
-## Database Model
-
-```
-Employee
-    │
-    ├────────── Contract ────────── Student
-    │                 │
-    │                 │
-    │              Membership Plan
-    │
-    ├──────── Workout Sheet ─────── Exercise
-    │
-    └──────── Equipment Maintenance ─── Equipment
-```
-
 ---
 
 ## Concepts Applied
 
-- Relational database modeling
+- Relational Modeling
 - Primary Keys
 - Foreign Keys
-- One-to-Many relationships
+- One-to-Many Relationships
 - Referential Integrity
-- Data normalization
-
----
-
-## Project Structure
-
-```
-Gym-Management-Database/
-│
-├── schema.sql
-├── inserts.sql
-├── queries.sql
-├── README.md
-└── images/
-```
+- Database Normalization
 
 ---
 
@@ -90,15 +65,14 @@ Gym-Management-Database/
 - Views
 - Stored Procedures
 - Triggers
-- Index optimization
-- Sample data generation
-- Advanced analytical queries
+- Indexes
+- Advanced Reports
 
 ---
 
 ## Academic Context
 
-This project was developed as the final assignment for a Database course, applying relational modeling concepts and SQL to solve a real-world business scenario.
+This project was developed as the final assignment for a Database course, applying relational modeling concepts to design and implement a complete database for a fictional gym.
 
 ---
 
